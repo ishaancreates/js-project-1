@@ -65,6 +65,13 @@ section {
 
 .btn {
   padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1);
 }
 
 section {
@@ -102,6 +109,7 @@ section .infos {
 
 .block {
   border: 1px solid var(--border-primary-color);
+  border-radius: 50%;
 }
 
 .fill {
@@ -124,9 +132,14 @@ section .infos {
   align-items: center;
 }
 
-.modal .start-game {
+.modal .start-game ,
+.modal .game-over {
   display: flex;
   flex-direction: column;
   gap: var(--space-lg);
   align-items: center;
+}
+ 
+.modal .game-over{
+  display: none; 
 }
